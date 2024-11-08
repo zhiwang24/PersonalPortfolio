@@ -1,0 +1,309 @@
+/* Font */
+@font-face {
+  font-family: Centra;
+  src: url(./assets/font/CentraNo2-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url(./assets/font/CentraNo2-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url(./assets/font/CentraNo2-Book.ttf);
+  font-weight: 400;
+}
+
+/* Default Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: rgb(0, 0, 0) !important;
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+/* Nav Bar */
+.navBarContainer {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  justify-content: center !important;
+  max-width: none !important;
+}
+.navbar-nav {
+  display: flex !important;
+  justify-content: left !important;
+  flex-basis: content!important; 
+  align-items: center !important;
+}
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+}
+nav.navbar.scrolled {
+  padding: 0;
+  background-color: rgba(18, 18, 18, .9);
+}
+.navbar-text {
+  padding: 1rem;
+}
+.navbar-brand {
+  margin: 0 !important;
+}
+.navbar-logo {
+  max-height: 4rem;
+  max-width: 100%;
+  height: auto;
+  width: auto; 
+}
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 800;
+  color: rgb(226 232 240) !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.55;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    opacity: 1;
+}
+
+.social-icon a {
+    width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon a::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+	  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+    transform: scale(1);
+}
+.social-icon a img {
+	width: 40%;
+	z-index: 1;
+	transition: .9s ease-in-out;
+}
+.social-icon a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+/* Banner */
+.bannerContainer{
+  position: relative;
+  display: block;
+  top: 15rem;
+  width: 80% !important;
+  max-width: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+.banner-rowbox {
+  justify-content: center;
+}
+.banner-wordbox {
+  flex: .75 !important;
+  justify-content: inline;
+}
+.banner-wordbox.greating {
+  line-height: 3.5rem;
+  font-weight: 800;
+  font-size: 4rem;
+}
+.banner-wordbox.greating:after {
+  content: '👋';
+  animation-name: wave-animation;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.banner-wordbox.name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 4rem;
+}
+.banner-wordbox.name:before {
+  content: '';
+  border-bottom: 18px solid rgb(104,110,255);
+  width: 16.5rem;
+  box-sizing: inherit;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 5.5rem;
+  top: 4rem;
+  z-index: -10;
+}
+.banner-wordbox.roles {
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+.banner-wordbox.roles.text {
+  line-height: 4rem;
+  font-weight: 800;
+  font-size: 3.5rem;
+  background: linear-gradient(90deg, rgb(188,131,251), rgb(200,98,195), rgb(210,51,107)) text;
+  -webkit-text-fill-color: transparent;
+  border-right: .4rem solid;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite; 
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(210,51,107); }
+}
+.banner-major-school {
+  line-height: 4rem;
+  display: flex;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.banner button {
+  margin-top: 1rem;
+  margin-right: 4rem;
+  font-weight: 800;
+  letter-spacing: .1rem;
+  padding: .6rem .6rem;
+  color: white;
+  background: linear-gradient(90deg, rgb(188,131,251), rgb(200,98,195), rgb(210,51,107));
+  border: none;
+  display: inline-block;
+  border-radius: .75rem;
+}
+
+/* About Me */
+.section-bar {
+  position: relative;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  border: 1px solid ;
+}
+.aboutme-section {
+  margin-top: 25rem;
+  margin-bottom: 5rem;
+}
+.aboutme-container:before {
+    content: '';
+    border-bottom: .5rem solid rgb(104,110,255);
+    width: 8.6rem;
+    box-sizing: inherit;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -.2rem;
+    top: 2.1rem;
+    z-index: -10;
+}
+.aboutme-container {
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+.aboutme-content-holder {
+  margin-top: 1.5rem !important;
+}
+.aboutme-imageholder {
+  display: flex;
+  gap: 1.5rem;
+}
+.aboutMeImageMain {
+  height: 30rem;
+  border-radius: 1rem;
+}
+.aboutme-imageholder.large-container {
+  width: auto;
+}
+.aboutme-imageholder.side-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutMeImage2, .aboutMeImage3 {
+  height: 14.3rem;
+  border-radius: 1rem;
+}
+.aboutMe-header.description-container {
+  font-weight: 800;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutMe-header.description-container button {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 800;
+  letter-spacing: .1rem;
+  padding: .6rem .6rem;
+  color: white;
+  background: linear-gradient(90deg, rgb(188,131,251), rgb(200,98,195), rgb(210,51,107));
+  border: none;
+  display: inline-block;
+  border-radius: .75rem;
+}
