@@ -50,8 +50,8 @@ export const DottedBackground = () => {
         zIndex: -999,
         display: "block",
         backgroundColor: "#000000",
-        top: 0,
-        left: 0,
+        top: '0rem',
+        left: '-.25rem',
         width: "100%",
         height: "100%",
       }}

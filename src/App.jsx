@@ -4,6 +4,7 @@ import { DottedBackground } from './components/DottedBackground';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import { AboutMe } from './components/AboutMe';
+import { Experience } from './components/Experience';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <NavBar></NavBar>
       <Banner></Banner>
       <AboutMe></AboutMe>
+      <Experience></Experience>
     </div>
   );
 }
