@@ -129,31 +129,39 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 /* Banner */
 .banner {
-  height: 33rem !important;
+  height: auto !important;
+  padding-top: 8rem;
 }
-.bannerContainer{
+.bannerContainer {
   position: relative;
   display: block;
-  top: 15rem;
-  width: 80% !important;
+  top: 25%;
   max-width: none !important;
   padding-top: 4rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   align-items: center;
   justify-content: center;
 }
 .banner-rowbox {
   justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width:1400px) {
+  .banner-wordbox {
+    width: 80% !important;
+  }
 }
 .banner-wordbox {
-  flex: .75 !important;
-  justify-content: inline;
+  align-content: start;
+  width: 50%;
 }
 .banner-wordbox.greating {
-  line-height: 3.5rem;
+  font-size: 3.5rem;
   font-weight: 800;
-  font-size: 4rem;
+  line-height: 1rem;
 }
 .banner-wordbox.greating:after {
   content: '👋';
@@ -190,14 +198,14 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     transform: rotate(0deg);
   }
 }
-.banner-wordbox.name {
+.banner-wordbox.name, .banner-wordbox.roles {
   font-size: 3.5rem;
   font-weight: 800;
   line-height: 4rem;
 }
 .banner-wordbox.name:before {
   content: '';
-  border-bottom: 18px solid rgb(104,110,255);
+  border-bottom: 1.2rem solid rgb(104,110,255);
   width: 16.5rem;
   box-sizing: inherit;
   display: block;
@@ -207,11 +215,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   left: 5.5rem;
   top: 4rem;
   z-index: -10;
-}
-.banner-wordbox.roles {
-  font-weight: 800;
-  font-size: 3.5rem;
-  line-height: 4rem;
 }
 .banner-wordbox.roles.text {
   line-height: 4rem;
@@ -245,14 +248,45 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   border: none;
   display: inline-block;
   border-radius: .75rem;
-  transition: transform 1s ease;
+  transition: transform .5s ease;
 }
 .banner button:hover {
-  transform: translateY(-.5rem);
+  transform: scale(1.2);
 }
+@media (max-width:900px) {
+  .banner-wordbox.greating {
+    font-size: 2rem;
+  }
+  .banner-wordbox.name, .banner-wordbox.roles, .banner-wordbox.roles.text, .banner-major-school {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .banner-wordbox.name:before {
+    width: 9.7rem;
+    border-bottom: .8rem solid rgb(104,110,255);
+    box-sizing: inherit;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 3rem;
+    top: 2.7rem;
+  }
+}
+@media (max-width:560px) {
+  .banner-button-container {
+    display: flex;
+  }
+  .banner-button-container button {
+    letter-spacing: 0rem !important;
+    margin-right: 1rem;
+    font-size: .7rem !important;
+  }
+}
+
 /* About Me */
 .aboutme-section {
-  margin-top: 25rem;
+  margin-top: 7rem;
   padding-bottom: 4rem;
 }
 .aboutme-header {
@@ -292,7 +326,16 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 @media (max-width:990px){
   .aboutMe-header.description-container {
     width:100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
  }
+ .aboutMeImageMain, .aboutMeImage4 {
+  width: 11rem !important;
+}
+.aboutMeImage2, .aboutMeImage3 {
+  height: 12rem !important;
+}
+
 }
 .aboutme-imageholder {
   display: flex;
@@ -352,13 +395,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   border: none;
   display: inline-block;
   border-radius: .75rem;
-  transition: transform 1s ease;
+  transition: transform .5s ease;
   display: flex;
   margin-left: auto;
   margin-right: auto;
 }
 .AboutMeConnectButton button:hover {
-  transform: translateY(-.75rem);
+  transform: scale(1.1);
 }
 .aboutme-content-holder a {
   color: transparent;
@@ -394,6 +437,14 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     top: 3rem;
     z-index: -10;
 }
-.myExperience {
-  display: block;
+@media (max-width:480px) {
+  .experience-header {
+    font-size: 1.5rem !important; 
+  }
+  .experience-header:before {
+    border-bottom: .5rem solid rgb(104,110,255);
+    width: 16.5rem;
+    left: 0rem;
+    top: 2rem;
+  }
 }

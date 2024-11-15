@@ -14,7 +14,8 @@ export const Experience = () => {
                     <div className="timeline-line"></div>
                       {timelineData.map((event, index) => (
                         <div key={index} className="timeline-item">
-                        <div className={`timeline-dot ${event.color}`}></div>
+                        <div className={`timeline-dot ${event.color}`}
+                        ></div>
                         <div className="timeline-content">
                             <p className="date">{event.date}</p>
                             <span className="title">{event.title}</span>

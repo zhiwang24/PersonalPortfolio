@@ -1,18 +1,10 @@
 export const timelineData = [
     {
-      date: '2022',
-      title: 'Education',
-      description: 'Bachelor of Science in Computer Science ',
-      location: '@Georgia Tech',
-      role: '',
-      color: 'white'
-    },
-    {
-      date: '2023',
+      date: '2024',
       action: 'Joined ',
-      location: '@Objects & Design Lab ',
-      role: 'as Application Developer',
-      color: 'white'
+      location: '@Global Payments ',
+      role: 'as Software Engineer Intern',
+      color: 'blue'
     },
     {
       date: '2024',
@@ -22,11 +14,19 @@ export const timelineData = [
       color: 'blue'
     },
     {
-      date: '2024',
+      date: '2023',
       action: 'Joined ',
-      location: '@Global Payment ',
-      role: 'as Software Engineer Intern',
-      color: 'blue'
-    }
+      location: '@Objects & Design Lab ',
+      role: 'as Application Developer',
+      color: 'white'
+    },
+    {
+      date: '2022',
+      title: 'Education',
+      description: 'Bachelor of Science in Computer Science ',
+      location: '@Georgia Tech',
+      role: '',
+      color: 'white'
+    },
   ];
   

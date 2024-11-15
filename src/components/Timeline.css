@@ -9,7 +9,7 @@
   
   .timeline-line {
     position: absolute;
-    top: 3.5rem;
+    top: 2.8rem;
     left: 50%;
     width: .1rem;
     background-color: #ffffff;
@@ -20,16 +20,16 @@
     display: flex;
     align-items: center;
     position: relative;
-    width: 25%;
+    width: 23%;
     margin-bottom: 3%;
   }
   .timeline-item:nth-child(odd) .timeline-content {
     position: relative;
-    left:14rem;
+    left: 70%;
   }
   .timeline-item:nth-child(even) .timeline-content {
     position: relative;
-    left:-14rem;
+    left: -70%;
     align-items: end !important;
     text-align: end;
   }
@@ -57,28 +57,37 @@
     color: #999;
     margin: 0;
   }
-  
-  .title {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .action {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin: 0;
-  }
 
   .location {
-    font-size: 1.1rem;
     color: rgb(104, 110, 255);
-    margin: 0;
   }
 
-  .description {
+  .timeline-content span {
     font-size: 1.1rem;
     font-weight: bold;
     margin: 0;
+  }
+  @media (max-width:1200px) {
+    .timeline-item {
+      width: 30%;
+    }
+  }
+  @media (max-width:800px) {
+    .timeline-item {
+      width: 36%;
+    }
+    .timeline-content span {
+      font-size: .9rem;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+  @media (max-width:480px) {
+    .timeline-item {
+      width: 40% !important;
+    }
+    .timeline-content span {
+      font-size: .85rem !important;
+    }
   }
   

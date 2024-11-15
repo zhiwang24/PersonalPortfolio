@@ -1,0 +1,37 @@
+.face-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width:1400px) {
+    .face-container {
+      display: none !important;
+    }
+  }
+  
+  .face-image {
+    width: 30rem;
+  }
+  
+  .eye {
+    position: absolute;
+    width: 1.5rem;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .left-eye {
+    top: 55%;
+    left: 31%;
+    transition: transform .2s ease-out;
+  }
+  
+  .right-eye {
+    top: 55%;
+    right: 31%;
+    transition: transform .2s ease-out;
+  }
+  

@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import FaceWithEyes from "./CursorTracking"
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Fullstack Developer", "Backend Developer", "Frontend Developer", "Undergrad Researcher"];
+    const toRotate = ["Fullstack Developer", "Backend Developer", "Frontend Developer", "Researcher"];
     const [text, setText] = useState('');
     const [speed, setSpeed] = useState(200);
 
@@ -39,10 +40,10 @@ export const Banner = () => {
     return (
         <section className="banner" id="home">
             <Container className="bannerContainer">
-                <Row className="banner-rowbox">
-                    <Col className="banner-wordbox">
+                <div className="banner-rowbox">
+                    <div className="banner-wordbox">
                         <span className="banner-wordbox greating">{"Hello "}</span>
-                        <h1 className="banner-wordbox name">{"I'm Zhi Wang "}</h1>
+                        <span className="banner-wordbox name">I'm Zhi Wang<br/></span>
                         <span className="banner-wordbox roles">
                           {"I'm a "}<span className="banner-wordbox roles text">{text}</span>
                         </span> 
@@ -51,8 +52,9 @@ export const Banner = () => {
                           <a href="https://www.linkedin.com/in/zhiwang24/"><button>Let's Connect!</button></a>
                           <button onClick={() => console.log('connect')}>View Resume!</button>
                         </span>
-                    </Col>
-                </Row>
+                    </div>
+                    <FaceWithEyes></FaceWithEyes>
+                </div>
             </Container>
         </section>
     )
