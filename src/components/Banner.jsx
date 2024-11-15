@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import FaceWithEyes from "./CursorTracking"
+import Arrow from "../assets/image/arrow.png";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -55,6 +56,8 @@ export const Banner = () => {
                     </div>
                     <FaceWithEyes></FaceWithEyes>
                 </div>
+                <a className="arrow" href="#about"><img className="arrow" src ={Arrow} alt = "Down-Arrow">
+                    </img></a>
             </Container>
         </section>
     )

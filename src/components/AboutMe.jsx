@@ -24,9 +24,8 @@ export const AboutMe = () => {
                 </div>
                 <div className="aboutMe-header description-container">
                     My name is Zhi, I am currently a computer science student at the Georgia Institute of Technology, driven by a passion for making technology accessible and efficient for everyone.<br/><br/>
-                    Growing up in an environment where many struggled with complex interfaces has fueled my desire to simplify technology. 
-                    I aim to leverage my skills and creativity to develop applications that connect with people on a meaningful level. 
-                    I have experience in full-stack development and academic research, equipping me with a diverse skill set.<br/><br/>
+                    Growing up, I saw many people around me struggle to navigate complex technology interfaces, which inspired me to make things more simpler and elegant.
+                    I want to use my skills and creativity to build applications that truly connect with people. With experience in full-stack development and academic research, equipping me with a diverse skill set.<br/><br/>
                     Outside of my studies, I enjoy traveling, fishing, exploring fashion, and food! Feel free to check out my contacts linked below, and I hope you enjoy my page!<br/><br/>
                 </div>
                 <a className="AboutMeConnectButton" href="https://www.linkedin.com/in/zhiwang24/"><button>Let's Connect!</button></a>

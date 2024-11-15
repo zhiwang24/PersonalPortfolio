@@ -7,7 +7,6 @@ export const DottedBackground = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    // Set canvas dimensions to match the viewport and document height
     const setCanvasSize = () => {
       canvas.width = window.innerWidth;
       canvas.height = document.body.scrollHeight;
@@ -15,10 +14,10 @@ export const DottedBackground = () => {
 
     const drawDots = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "#888"; // Dot color (light gray)
+      ctx.fillStyle = "#888";
 
-      const dotRadius = 1; // Radius of each dot
-      const dotSpacing = 40; // Distance between dots
+      const dotRadius = 1;
+      const dotSpacing = 35;
 
       for (let x = dotSpacing; x < canvas.width; x += dotSpacing) {
         for (let y = dotSpacing; y < canvas.height; y += dotSpacing) {
@@ -30,7 +29,7 @@ export const DottedBackground = () => {
     };
 
     setCanvasSize();
-    drawDots(); // Draw initial dots
+    drawDots();
 
     const handleResize = () => {
       setCanvasSize();
@@ -49,7 +48,7 @@ export const DottedBackground = () => {
         position: "absolute",
         zIndex: -999,
         display: "block",
-        backgroundColor: "#000000",
+        backgroundColor: "0a0a0a",
         top: '0rem',
         left: '-.25rem',
         width: "100%",
