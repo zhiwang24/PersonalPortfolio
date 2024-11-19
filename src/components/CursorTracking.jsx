@@ -64,7 +64,7 @@ const FaceWithEyes = () => {
         ref={faceRef}
         style={{
           transform: `rotate(${rotation}deg)`,
-          transition: "transform .7s ease-out",
+          transition: "transform .5s ease-out",
         }}
       >
         <img src={faceImage} alt="Face" className="face-image" />

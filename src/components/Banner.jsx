@@ -6,7 +6,7 @@ import Arrow from "../assets/image/arrow.png";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Fullstack Developer", "Backend Developer", "Frontend Developer", "Researcher"];
+    const toRotate = ["Developer", "Designer", "Researcher"];
     const [text, setText] = useState('');
     const [speed, setSpeed] = useState(200);
 
@@ -28,11 +28,17 @@ export const Banner = () => {
 
     
         if (!isDeleting && updateText === fullText) {
-          setIsDeleting(true);
-          setSpeed(200);
+        // Pause for 5 seconds before starting to delete
+        setIsDeleting(true);
+        setSpeed(10000); // Speed while deleting (normal typing speed)
+
+        setTimeout(() => {
+            // After 5 seconds, switch back to typing speed and start deleting
+            setSpeed(150); // Normal speed for typing
+        }, 1500); // 5-second pause
         } else if (isDeleting && updateText === '') {
           setIsDeleting(false);
-          setSpeed(200);
+          setSpeed(150);
           setLoopNum(loopNum + 1);
         }
     }
@@ -48,10 +54,10 @@ export const Banner = () => {
                         <span className="banner-wordbox roles">
                           {"I'm a "}<span className="banner-wordbox roles text">{text}</span>
                         </span> 
-                        <p className="banner-major-school">B.S. in Computer Science @ Georgia Tech</p>
+                        <span className="banner-major-school">Computer Science B.S. @ Georgia Tech</span>
                         <span className="banner-button-container">
                           <a href="https://www.linkedin.com/in/zhiwang24/"><button>Let's Connect!</button></a>
-                          <button onClick={() => console.log('connect')}>View Resume!</button>
+                          <a href="https://drive.google.com/file/d/1MTc92zkwNnQ4qomojxjc2C3xhd2ybD-I/view?usp=sharing"><button>View Resume!</button></a>
                         </span>
                     </div>
                     <FaceWithEyes></FaceWithEyes>
