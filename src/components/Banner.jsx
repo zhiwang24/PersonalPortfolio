@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import FaceWithEyes from "./CursorTracking"
 import Arrow from "../assets/image/arrow.png";
+import "./Banner.css";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -50,7 +51,7 @@ export const Banner = () => {
                 <div className="banner-rowbox">
                     <div className="banner-wordbox">
                         <span className="banner-wordbox greating">{"Hello "}</span>
-                        <span className="banner-wordbox name">I'm Zhi Wang<br/></span>
+                        <span className="banner-wordbox name">I'm <span className="full-name">Zhi Wang</span><br/></span>
                         <span className="banner-wordbox roles">
                           {"I'm a "}<span className="banner-wordbox roles text">{text}</span>
                         </span> 

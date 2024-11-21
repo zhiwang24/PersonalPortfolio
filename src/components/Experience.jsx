@@ -1,6 +1,7 @@
 import { Row, Col, Container } from "react-bootstrap";
 import { timelineData } from './TimelineData';
-import "./Timeline.css"
+import "./Timeline.css";
+import "./Experience.css";
 
 export const Experience = () => {
 

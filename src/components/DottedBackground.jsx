@@ -14,7 +14,7 @@ export const DottedBackground = () => {
 
     const drawDots = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "#888";
+      ctx.fillStyle = "rgb(219, 207, 255)";
 
       const dotRadius = 1;
       const dotSpacing = 35;
@@ -48,12 +48,13 @@ export const DottedBackground = () => {
         position: "absolute",
         zIndex: -999,
         display: "block",
-        backgroundColor: "#0c0c0c",
+        backgroundColor: "black",
         top: '0rem',
         left: '-.25rem',
         width: "100%",
         height: "100%",
       }}
+      
     ></canvas>
   );
 }

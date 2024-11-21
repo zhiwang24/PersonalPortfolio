@@ -18,14 +18,14 @@ export const timelineData = [
       action: 'Joined ',
       location: '@Objects & Design Lab ',
       role: 'as Application Developer',
-      color: 'white'
+      color: 'blue'
     },
     {
       date: 'Aug 2022',
       action: 'Started education ',
       location: '@Georgia Tech ',
       role: 'studying Computer Science ',
-      color: 'white'
+      color: 'blue'
     },
   ];
   

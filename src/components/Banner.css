@@ -1,0 +1,208 @@
+/* Banner */
+.banner {
+    height: auto !important;
+    padding-top: 8rem;
+  }
+  .bannerContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 25%;
+    max-width: none !important;
+    padding-top: 4rem;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-rowbox {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 65%;
+  }
+  @media (max-width:1400px) {
+    .banner-wordbox {
+      width: max-content !important;
+    }
+  }
+  .banner-wordbox {
+    align-content: start;
+  }
+  
+  .banner-wordbox.greating:after {
+    content: '👋';
+    animation-name: wave-animation;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .banner-wordbox.greating, .banner-wordbox.name, .banner-wordbox.roles {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+  }
+  .banner-wordbox.greating:before, .banner-wordbox.roles:before{
+    content: '';
+    border-bottom: 1.2rem solid transparent;
+    width: 1rem;
+    box-sizing: inherit;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 5.5rem;
+    top: 4rem;
+    z-index: -10;
+  }
+  .banner-wordbox.roles.text:before {
+    display: none;
+  }
+  .banner-wordbox.name:before {
+    content: '';
+    border-bottom: 1rem solid rgb(104,110,255);
+    width: 16.5rem;
+    line-height: 1rem !important;
+    box-sizing: inherit;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 5.5rem;
+    top: 3.6rem;
+    z-index: -10;
+  }
+  .banner-wordbox.roles.text {
+    font-weight: 800;
+    height: .1rem;
+    line-height: 0rem !important;
+    background: linear-gradient(to right, #ec4899, #8b5cf6) text;
+    -webkit-text-fill-color: transparent;
+    border-right: .4rem solid;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .75s step-end infinite; 
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #8b5cf6; }
+  }
+  .banner-major-school {
+    line-height: 3rem;
+    display: flex;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  .banner button {
+    margin-top: 4rem;
+    margin-right: 4rem;
+    font-weight: 600;
+    padding: .6rem .8rem;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(to right, #ec4899, #8b5cf6);
+    border: none;
+    display: inline-block;
+    border-radius: 2rem;
+    transition: transform .5s ease;
+  }
+  .banner button:hover {
+    transform: scale(1.2);
+  }
+  @media (max-width:900px) {
+    .banner-wordbox.greating, .banner-wordbox.name, .banner-wordbox.roles, .banner-wordbox.roles.text {
+      font-size: 2rem;
+      line-height: 1.75rem;
+    }
+    .banner-major-school {
+      font-size: 1rem;
+    }
+    .banner-wordbox.name:before {
+      width: 9.7rem;
+      border-bottom: .8rem solid rgb(104,110,255);
+      box-sizing: inherit;
+      display: block;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      left: 3rem;
+      top: 2.1rem;
+    }
+  }
+  @media (max-width:650px) {
+    .banner-button-container {
+      display: flex;
+    }
+    .banner-button-container button {
+      letter-spacing: 0rem !important;
+      margin-right: 1rem;
+      font-size: .7rem !important;
+    }
+    .banner-wordbox.greating, .banner-wordbox.name, .banner-wordbox.roles, .banner-wordbox.roles.text {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+    .banner-wordbox.name:before {
+      width: 6.65rem;
+      border-bottom: .4rem solid rgb(104,110,255);
+      left: 2.15rem;
+      top: 1.7rem;
+    }
+    .banner-major-school {
+      font-size: .8rem !important;
+      line-height: 2rem;
+    }
+  }
+  .arrow {
+    height: 2rem;
+    width: 4rem;
+    position: absolute;
+    bottom:-2.5rem;
+    opacity: .4;
+    display: inline-block;
+    animation: floating 3s linear infinite;
+  }
+  @keyframes floating {
+    0% {
+      transform: translateY(-.2rem);
+    }
+    50% {
+        transform: translateY(.2rem);
+    }
+    100% {
+        transform: translateY(-.2rem);
+    }
+  }
+  @media (max-width:1400px) {
+    .arrow {
+      display: none !important;
+    }
+  }

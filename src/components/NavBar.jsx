@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Nav, Navbar, Container} from "react-bootstrap";
 import logo from "../assets/image/logo.png";
-import LinkedInIcon from "../assets/image/LinkedInIcon.svg"
+import LinkedInIcon from "../assets/image/LinkedInIcon.svg";
+import "./NavBar.css";
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home')
     const [scrolled, setScrolled] = useState(false);
