@@ -1,6 +1,13 @@
 export const timelineData = [
+      {
+      date: 'May 2025',
+      action: 'Joined ',
+      location: '@Amazon ',
+      role: 'as Software Development Intern',
+      color: 'blue'
+    },
     {
-      date: 'May 2024',
+      date: 'Jun 2024',
       action: 'Joined ',
       location: '@Global Payments ',
       role: 'as Software Engineer Intern',
@@ -10,14 +17,7 @@ export const timelineData = [
       date: 'Jan 2024',
       action: 'Joined ',
       location: '@Art & AI Innovation Lab ',
-      role: 'as Application Developer',
-      color: 'blue'
-    },
-    {
-      date: 'Aug 2023',
-      action: 'Joined ',
-      location: '@Objects & Design Lab ',
-      role: 'as Application Developer',
+      role: 'as Undergraduate Researcher',
       color: 'blue'
     },
     {

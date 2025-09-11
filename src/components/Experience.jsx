@@ -1,16 +1,18 @@
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
+import { use3DTilt } from './3dTilt';
 import { timelineData } from './TimelineData';
 import "./Timeline.css";
 import "./Experience.css";
 
 export const Experience = () => {
+    const myExperience = use3DTilt({ maxTilt: 12 });
 
     return (
         <div className="experience-section" id="experience">
             <hr></hr>
             <Container className="experience-container">
                 <div className="experience-header">Experience / Education</div>
-                <Row className="myExperience">
+                <Row className={myExperience}>
                   <div className="timeline">
                     <div className="timeline-line"></div>
                       {timelineData.map((event, index) => (

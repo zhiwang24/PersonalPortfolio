@@ -2,15 +2,16 @@
 .aboutme-section {
     margin-top: 7rem;
     padding-bottom: 2rem;
-  }
-  .aboutme-header {
+}
+
+.aboutme-header {
     font-size: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 2rem;
-  }
-  .aboutme-header:before {
+}
+.aboutme-header:before {
       content: '';
       border-bottom: .5rem solid rgb(104,110,255);
       width: 12rem;
@@ -141,7 +142,8 @@
     color: transparent;
   }
   .window-topbar {
-    justify-content: start;
+    justify-content: start !important;
+    align-items: center !important;
     padding-left: 1rem;
     padding-bottom: 1rem;
     border-bottom: .15rem solid rgba(49, 46, 129, 1);
