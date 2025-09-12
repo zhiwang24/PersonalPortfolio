@@ -21,12 +21,11 @@ export const Experience = () => {
                         ></div>
                         <div className="timeline-content">
                             <p className="date">{event.date}</p>
-                            <span className="title">{event.title}</span>
-                            <span className="action">{event.action}
-                                <span className="description">{event.description}</span>
+                            <div className="timeline-subcontent"></div>
+                                <span className="action">{event.action}
                                 <span className="location">{event.location}</span>
-                                <span className="role">{event.role}</span>
                             </span>
+                            <span className="role">{event.role}</span>
                         </div>
                         </div>
                     ))}
