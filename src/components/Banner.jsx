@@ -29,14 +29,12 @@ export const Banner = () => {
 
     
         if (!isDeleting && updateText === fullText) {
-        // Pause for 5 seconds before starting to delete
         setIsDeleting(true);
-        setSpeed(10000); // Speed while deleting (normal typing speed)
+        setSpeed(10000);
 
         setTimeout(() => {
-            // After 5 seconds, switch back to typing speed and start deleting
-            setSpeed(150); // Normal speed for typing
-        }, 1500); // 5-second pause
+            setSpeed(150);
+        }, 1500);
         } else if (isDeleting && updateText === '') {
           setIsDeleting(false);
           setSpeed(150);

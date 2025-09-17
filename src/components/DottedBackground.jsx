@@ -62,7 +62,6 @@ export const DottedBackground = () => {
         position: "fixed",
         zIndex: -999,
         display: "block",
-        backgroundColor: "black",
         top: 0,
         left: 0,
         width: "100%",

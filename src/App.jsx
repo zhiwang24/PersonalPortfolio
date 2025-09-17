@@ -5,6 +5,7 @@ import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import { AboutMe } from './components/AboutMe';
 import { Experience } from './components/Experience';
+import { ResumeSection } from './components/Resume';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Banner></Banner>
       <AboutMe></AboutMe>
       <Experience></Experience>
+      <ResumeSection></ResumeSection>
     </div>
   );
 }

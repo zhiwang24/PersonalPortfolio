@@ -105,7 +105,8 @@
   }
   .aboutMe-header.description-container {
     border-radius: 1rem;
-    background: linear-gradient(90deg, rgba(3, 5, 20, 0.9), rgba(10, 13, 55, .8));
+    background: linear-gradient(45deg, rgba(3, 5, 20, 0.1
+    ), rgba(10, 13, 55, .3));
     overflow: hidden;
     border: 2px solid #1b2c68a0;
     padding: 1rem;

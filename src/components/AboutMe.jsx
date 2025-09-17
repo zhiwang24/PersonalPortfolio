@@ -36,9 +36,9 @@ export const AboutMe = () => {
                     </div>
                   </div>
                   <div className="aboutMe-header description">
-                  Welcome to my page! My name is Zhi, a computer science student at the Georgia Institute of Technology, with a passion for creating accessible and efficient technology solutions.<br/><br/>
-                  My background in full-stack development and academic research has equipped me with a diverse skill set, enabling me to build meaningful, user-centric solutions.<br/><br/>
-                  Beyond my studies, I have a keen interest in traveling, fishing, fashion, and trying new food! Feel free to check out my contacts linked below, and I hope you enjoy my page!
+                  Welcome to my page! My name is Zhi, I am a computer science student at Georgia Tech, focusing on creating intuitive and efficient solutions.<br></br><br></br>
+                  Through a mix of research, internships, and projects, I’ve developed the skills to adapt to different requirements and unfamiliar territory, allowing me to create solutions to serve any customer.<br></br><br></br>
+                  Feel free to check out my contacts linked below, and I hope you enjoy my page!
                   </div>
                 </div>
                 

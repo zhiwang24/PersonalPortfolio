@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
+import { use3DTilt } from './3dTilt';
 import faceImage from "../assets/image/bannerimage.png";
 import "./CursorTracking.css";
 
 const FaceWithEyes = () => {
-    const faceRef = useRef(null);
+    const faceRef = use3DTilt({ maxTilt: 30 });
     const leftEyeRef = useRef(null);
     const rightEyeRef = useRef(null);
   
