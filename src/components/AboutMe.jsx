@@ -12,7 +12,6 @@ export const AboutMe = () => {
 
     return (
         <div className="aboutme-section" id="about">
-            <hr></hr>
             <Container className="aboutme-container">
                 <div className="aboutme-header">About Me
                 </div>

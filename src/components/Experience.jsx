@@ -9,7 +9,6 @@ export const Experience = () => {
 
     return (
         <div className="experience-section" id="experience">
-            <hr></hr>
             <Container className="experience-container">
                 <div className="experience-header">Experience / Education</div>
                 <Row className={myExperience}>

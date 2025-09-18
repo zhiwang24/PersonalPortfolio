@@ -6,6 +6,8 @@ import { Banner } from './components/Banner';
 import { AboutMe } from './components/AboutMe';
 import { Experience } from './components/Experience';
 import { ResumeSection } from './components/Resume';
+import { Projects } from './components/Projects';
+import { ProjectData } from './components/ProjectData';
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <Banner></Banner>
       <AboutMe></AboutMe>
       <Experience></Experience>
+      <Projects items={ProjectData}></Projects>
       <ResumeSection></ResumeSection>
     </div>
   );

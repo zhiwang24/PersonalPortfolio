@@ -1,0 +1,76 @@
+/* Projects.css */
+:root { --accent: rgb(104,110,255); }
+
+.projects-section {
+    padding-bottom: 10rem;
+}
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-header {
+    font-weight: 800;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.projects-header:before {
+    content: '';
+    border-bottom: .5rem solid rgb(104,110,255);
+    width: 21rem;
+    box-sizing: inherit;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0rem;
+    top: 3rem;
+    z-index: -10;
+}
+
+/* Grid */
+.projects-grid {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem; width: min(1100px, 92%);
+}
+@media (max-width: 900px){
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tile */
+.project-tile {
+  position: relative; min-height: 22rem; border-radius: 1rem; overflow: hidden;
+  background-size: cover; background-position: center; box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+.project-overlay {
+  position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.45) 55%, rgba(0,0,0,.8) 100%);
+}
+.project-content {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 1.25rem 1.25rem 1.5rem; color: #e5e7eb;
+}
+.project-title { font-size: 1.4rem; font-weight: 800; margin: 0 0 .25rem 0; color: #fff; }
+.project-desc { font-size: .95rem; line-height: 1.35rem; opacity: .9; margin: 0 0 1rem 0; }
+
+/* Actions — mirrors Banner button style (gradient + rounded + scale on hover) */
+.project-actions { display: flex; gap: .8rem; }
+.btn-gradient {
+  font-weight: 600; padding: .6rem .9rem; font-size: 1rem; color: white; text-decoration: none;
+  background: linear-gradient(to right, #ec4899, #8b5cf6); border: none; display: inline-block; border-radius: 2rem; transition: transform .3s ease;
+}
+.btn-gradient:hover { transform: scale(1.08); }
+.btn-secondary { filter: saturate(.9) brightness(.95); }
+
+/* Nice hover zoom for the background */
+.project-tile::after { content: ""; position: absolute; inset: 0; background: inherit; z-index: 0; transform: scale(1); transition: transform .6s ease; filter: brightness(1.05); }
+.project-tile:hover::after { transform: scale(1.05); }
+
+/* Make sure overlay/content sit above ::after */
+.project-overlay, .project-content { position: absolute; z-index: 1; }

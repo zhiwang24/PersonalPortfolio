@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import FaceWithEyes from "./CursorTracking"
 import Arrow from "../assets/image/arrow.png";
 import "./Banner.css";
