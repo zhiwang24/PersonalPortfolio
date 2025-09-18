@@ -2,7 +2,7 @@
 :root { --accent: rgb(104,110,255); }
 
 .projects-section {
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
 }
 .projects-container {
     display: flex;

@@ -5,6 +5,7 @@ import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import resumePdf from "../assets/ZhiWangResume.pdf";
+import Arrow from "../assets/image/arrow.png";
 import "./Resume.css";
 
 export const ResumeSection = () => {
@@ -27,6 +28,8 @@ export const ResumeSection = () => {
                     )}
                 </div>
             </Container>
+            <a className="up-arrow" href="#home"><img className="up-arrow" src ={Arrow} alt = "Down-Arrow">
+                </img></a>
         </div>
     );
 };

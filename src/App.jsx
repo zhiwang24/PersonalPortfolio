@@ -9,6 +9,8 @@ import { Experience } from './components/Experience';
 import { ResumeSection } from './components/Resume';
 import { Projects } from './components/Projects';
 import { ProjectData } from './components/ProjectData';
+import Skills from './components/Skills';
+import { SkillsData } from './components/SkillsData';
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
       <AboutMe></AboutMe>
       <Experience></Experience>
       <Projects items={ProjectData}></Projects>
+      <Skills groups={SkillsData}></Skills>
       <ResumeSection></ResumeSection>
     </div>
   );

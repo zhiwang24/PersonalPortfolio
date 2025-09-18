@@ -7,13 +7,13 @@ export const ProjectData = [
         desc: "Gesture-controlled performance tool that manipulates Ableton Live in real time.",
         image: SeatWatch,
         demo: "https://drive.google.com/file/d/1Q6R1AORr5QEN7TdSIhrQyzVWZcDPLau9/view?usp=sharing",
-        github: "https://github.com/zhi/sonogest",
+        github: "https://github.com/zhiwang24/SeatWatch/blob/main/GetCourse.py",
       },
       {
         title: "Sonogest",
         desc: "Gesture-controlled performance tool using computer vision",
         image: SonoGest,
         demo: "https://drive.google.com/file/d/1m2_3hj3o1tZFujparirFXSKYIXf9S2X6/view?usp=sharing",
-        github: "https://github.com/zhi/ai-summarizer",
+        github: "https://github.com/ayaneyokoya/SonoGest",
       },
 ]
