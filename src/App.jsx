@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { DottedBackground } from './components/DottedBackground';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
@@ -13,6 +14,7 @@ import { ProjectData } from './components/ProjectData';
 function App() {
   return (
     <div className="App">
+      <SpeedInsights/>
       <DottedBackground></DottedBackground>
       <NavBar></NavBar>
       <Banner></Banner>
