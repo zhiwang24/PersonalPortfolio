@@ -65,19 +65,27 @@
 /* Pills */
 .skills-list { display: flex; flex-wrap: wrap; gap: .6rem; padding: 0; list-style: none; justify-content: center;}
 .skill-pill {
+  align-content: center;;
+  height: 4rem;
   text-align: center;
   font-weight: 600; font-size: 1.1rem; color: white; padding: .5rem .8rem; border-radius: .5rem;
   width: 40%;;
   background: linear-gradient(to right, rgba(236, 72, 153, 0.7), rgba(139, 92, 246, 0.7));
-  transition: transform .2s ease, box-shadow .2s ease; outline: none; cursor: default;
+  transition: transform .5s ease, box-shadow .2s ease; outline: none; cursor: default;
 }
-.skill-pill:hover, .skill-pill:focus { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.25); }
+.skill-pill:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,.25); 
+  transform: scale(1.08);
+  background: linear-gradient(to right, rgba(236, 72, 153, 1), rgba(139, 92, 246, 1));
+  
+}
 .skill-logo {
   display: none;
 }
 
 .skill-pill:hover .skill-logo {
   display: inline-block;
+  height: 3rem;
 }
 .skill-pill:hover .skill-name {
   display: none;
