@@ -47,8 +47,9 @@
 
 /* Tile */
 .project-tile {
-  position: relative; min-height: 22rem; border-radius: 1rem; overflow: hidden;
+  position: relative; min-height: 25rem; border-radius: 1rem; overflow: hidden;
   background-size: cover; background-position: center; box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  background-color: rgba(30, 30, 30, .50);
 }
 .project-overlay {
   position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.45) 55%, rgba(0,0,0,.8) 100%);
@@ -63,7 +64,8 @@
 .project-actions { display: flex; gap: .8rem; }
 .btn-gradient {
   font-weight: 600; padding: .6rem .9rem; font-size: 1rem; color: white; text-decoration: none;
-  background: linear-gradient(to right, #ec4899, #8b5cf6); border: none; display: inline-block; border-radius: 2rem; transition: transform .3s ease;
+  background: linear-gradient(to right, rgba(236, 72, 153, 0.3), rgba(139, 92, 246, 0.3));
+  border: none; display: inline-block; border-radius: 2rem; transition: transform .3s ease;
 }
 .btn-gradient:hover { transform: scale(1.08); }
 .btn-secondary { filter: saturate(.9) brightness(.95); }
@@ -71,6 +73,20 @@
 /* Nice hover zoom for the background */
 .project-tile::after { content: ""; position: absolute; inset: 0; background: inherit; z-index: 0; transform: scale(1); transition: transform .6s ease; filter: brightness(1.05); }
 .project-tile:hover::after { transform: scale(1.05); }
-
 /* Make sure overlay/content sit above ::after */
 .project-overlay, .project-content { position: absolute; z-index: 1; }
+
+.project-desc.expanded {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project-desc {
+  white-space: pre-line; /* turns \n into <br> visually */
+}
+
+@media (max-width: 800px) {
+  .learn-more-btn {
+    display: none;
+  }
+}

@@ -8,7 +8,6 @@ import "./AboutMe.css"
 
 
 export const AboutMe = () => {
-    const aboutMeSide = use3DTilt({ maxTilt: 12});
 
     return (
         <div className="aboutme-section" id="about">
@@ -26,7 +25,7 @@ export const AboutMe = () => {
                         <img className="aboutMeImage3" src={AboutMePic3} alt = "AboutMePic3"/>
                     </div>
                 </div>
-                <div ref={aboutMeSide} className="aboutMe-header description-container">
+                <div className="aboutMe-header description-container">
                   <div className="window-topbar">
                     <div className="window-items">
                         <div className="circle red"></div>

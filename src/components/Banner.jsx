@@ -56,7 +56,7 @@ export const Banner = () => {
                         <span className="banner-major-school">Computer Science B.S. @ Georgia Tech</span>
                         <span className="banner-button-container">
                           <a href="https://www.linkedin.com/in/zhiwang24/"><button>Let's Connect!</button></a>
-                          <a href="https://drive.google.com/file/d/1MTc92zkwNnQ4qomojxjc2C3xhd2ybD-I/view?usp=sharing"><button>View Resume!</button></a>
+                          <a href="#resume"><button>View Resume!</button></a>
                         </span>
                     </div>
                     <FaceWithEyes></FaceWithEyes>

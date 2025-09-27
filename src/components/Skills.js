@@ -18,8 +18,9 @@ export default function Skills({
               <h3 className="skills-title">{g.label}</h3>
               <ul className="skills-list" role="list">
                 {g.items.map((t) => (
-                  <li key={t} className="skill-pill" tabIndex={0} aria-label={`${g.label}: ${t}`}>
-                    {t}
+                  <li key={t.name} className="skill-pill" tabIndex={0}>
+                    <div className="skill-name">{t.name}</div>
+                    <img src={t.logo} className="skill-logo" />
                   </li>
                 ))}
               </ul>

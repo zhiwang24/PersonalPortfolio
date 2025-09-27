@@ -19,6 +19,35 @@ export const NavBar = () => {
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
     }, [])
+    useEffect(() => {
+        const sectionIds = ["home", "about", "experience", "project", "skill", "resume"];
+        const sections = sectionIds
+          .map(id => document.getElementById(id))
+          .filter(Boolean);
+      
+        if (sections.length === 0) return;
+      
+        const observer = new IntersectionObserver(
+          (entries) => {
+            const visible = entries
+              .filter(e => e.isIntersecting)
+              .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      
+            if (visible?.target?.id) {
+              const id = visible.target.id;
+              setActiveLink(id);
+              window.history.replaceState(null, "", `#${id}`);
+            }
+          },
+          {
+            threshold: [0.35],
+          }
+        );
+      
+        sections.forEach(sec => observer.observe(sec));
+        return () => observer.disconnect();
+      }, []);
+      
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);

@@ -143,8 +143,10 @@
     color: transparent;
   }
   .window-topbar {
-    justify-content: start !important;
+    display: flex;
+
     align-items: center !important;
+    justify-content: space-between;
     padding-left: 1rem;
     padding-bottom: 1rem;
     border-bottom: .15rem solid rgba(49, 46, 129, 1);
@@ -153,6 +155,7 @@
     display: flex;
     justify-content: start;
     gap: 0.5rem;
+    width: 15%;
   }
   
   .circle {

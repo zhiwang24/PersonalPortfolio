@@ -12,7 +12,6 @@ import { ProjectData } from './components/ProjectData';
 import Skills from './components/Skills';
 import { SkillsData } from './components/SkillsData';
 
-
 function App() {
   return (
     <div className="App">

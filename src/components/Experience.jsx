@@ -9,6 +9,7 @@ export const Experience = () => {
 
     const handleClick = (event) => {
         setSelected(event === selected ? null : event);
+        window.location.hash = 'experience';
     };
     return (
         <div className="experience-section" id="experience">
@@ -35,8 +36,19 @@ export const Experience = () => {
                 </Row>
                 {selected && (
                   <div className="timeline-detail-card">
-                    <span className="location">{selected.location}</span>
-                    <br></br>
+                  <div className="window-topbar">
+                    <div className="window-items">
+                        <div className="circle red"></div>
+                        <div className="circle orange"></div>
+                        <div className="circle green"></div>
+                    </div>
+                    <div className="location">{selected.location}</div>
+                    <div className="window-items">
+                        <div className="circle red"></div>
+                        <div className="circle orange"></div>
+                        <div className="circle green"></div>
+                    </div>
+                  </div>
                     {selected.description && (
                       <ul className="timeline-description">
                         {selected.description.map((point, i) => (
